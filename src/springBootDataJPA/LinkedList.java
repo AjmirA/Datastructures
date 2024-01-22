@@ -166,16 +166,6 @@ class Reverse_Nodes_in_k_Group {
         }
     }
 
-
-    static int lengthOfLinkedList(ListNode head) {
-        int length = 0;
-        while (head != null) {
-            ++length;
-            head = head.next;
-        }
-        return length;
-    }
-
     public static ListNode reverseKGroup(ListNode head, int k) {
         ListNode current = head;
         int count = 0;
